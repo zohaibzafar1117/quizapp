@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.ques{
+    
+    margin:4% auto;
+    box-shadow: 2px 2px 2px 2px olive;
+    border-radius: 25px;
+    padding: 4%;
+    width: 80%;
+
+}
+h1{
+    margin: 5% 40% ;
+    font-size: 4vw;
+    color: olive;
+}
+h3{
+    margin: 2% 20% ;
+    font-size: 2vw;
+    color: olive;
+    text-align: center;
+}
+.noques{
+    display: none;
+}
+.nbtn{
+    padding: 3px 25px;
+    background-color: olive;
+    color: papayawhip;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1vw;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>QUIZ APP</h1>
+
+        <div class="ques" id="q1">
+            <h3>Q1 : What does HTML stands for?</h3>
+            <input type="radio" name="ans1" value = "ok"  id="q1-1">Hyperlinks and Text  Markup Language<br>
+            <input type="radio" name="ans1" value = "nok" id="q1-1">Hyper Text Markup Language<br>
+            <input type="radio" name="ans1" value = "nok" id="q1-1">Home Toll Markup Language<br>
+            <input type="radio" name="ans1" value = "nok" id="q1-1">About Markup Language<br>
+            <button class="nbtn" onclick="next1()">Next</button>
+        </div>
+        <div class="noques" id="q2">
+            <h3>Q2 : What does HTML stands for?</h3>
+            <input type="radio" name="ans2" id="q2-1">Hyperlinks and Text  Markup Language<br>
+            <input type="radio" name="ans2" id="q2-2">Hyper Text Markup Language<br>
+            <input type="radio" name="ans2" id="q2-3">Home Toll Markup Language<br>
+            <input type="radio" name="ans2" id="q2-4">About Markup Language<br>
+            <button class="nbtn" onclick="next2()">Next</button>
+        </div>
+        <div class="noques" id="q3">
+            <h3>Q3 : What does HTML stands for?</h3>
+            <input type="radio" name="ans3" id="q3-1">Hyperlinks and Text  Markup Language<br>
+            <input type="radio" name="ans3" id="q3-2">Hyper Text Markup Language<br>
+            <input type="radio" name="ans3" id="q3-3">Home Toll Markup Language<br>
+            <input type="radio" name="ans3" id="q3-4">About Markup Language<br>
+            <button class="nbtn" onclick="next3()">Next</button>
+        </div>
+        <div class="noques" id="q4">
+            <h3>Q4 : What does HTML stands for?</h3>
+            <input type="radio" name="ans4" id="q4-1">Hyperlinks and Text  Markup Language<br>
+            <input type="radio" name="ans4" id="q4-2">Hyper Text Markup Language<br>
+            <input type="radio" name="ans4" id="q4-3">Home Toll Markup Language<br>
+            <input type="radio" name="ans4" id="q4-4">About Markup Language<br>
+            <button class="nbtn" onclick="next4()">Next</button>
+        </div>
+        <div class="noques" id="q5">
+            <h3>Q5 : What does HTML stands for?</h3>
+            <input type="radio" name="ans5" id="q5-1">Hyperlinks and Text  Markup Language<br>
+            <input type="radio" name="ans5" id="q5-2">Hyper Text Markup Language<br>
+            <input type="radio" name="ans5" id="q5-3">Home Toll Markup Language<br>
+            <input type="radio" name="ans5" id="q5-4">About Markup Language<br>
+            <button class="nbtn" onclick="result()">Result</button>
+        </div>
+        <div class="noques" id="result">
+          
+
+        </div>
+
+    </div>
+    
+</body>
+<script src="quiz.js"></script>
+</html>
